@@ -6,7 +6,7 @@ using namespace std;
 
 void main(Texture2d tex, out vec4 Position, out vec4 Color) {
 
-  // Get the worldspace noraml
+  // Get the worldspace normal
   vec3 N = normalize(getNormalMatrix() * getVertexNormal());
 
   Position = getModelViewProjectionMatrix() * getVertexPosition();
